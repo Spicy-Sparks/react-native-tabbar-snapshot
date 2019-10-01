@@ -1,0 +1,48 @@
+{
+  "_from": "react-native-tabbar-snapshot@^1.0.0",
+  "_id": "react-native-tabbar-snapshot@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-V8VwUP0TLda3oJvgt5tdnFaOV7WXPhTjCTLO7sXI3C2SHggSbD4bCUryMzNJhesimJidH21V2Owvj4zAylHoQQ==",
+  "_location": "/react-native-tabbar-snapshot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-tabbar-snapshot@^2.0.15",
+    "name": "react-native-i18n",
+    "escapedName": "react-native-tabbar-snapshot",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-tabbar-snapshot/-/react-native-tabbar-snapshot-1.0.0.tgz",
+  "_shasum": "09b5a9836116fa7dbd0054c46e2d1014c1ef3c65",
+  "_spec": "react-native-tabbar-snapshot@^1.0.0",
+  "_where": "/Users/marco/eSound",
+  "author": {
+    "name": "Marco Fontana"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "i18n-js": "1.0.0"
+  },
+  "deprecated": false,
+  "description": "Create TabBar Snapshot of React Native NAvigation",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "tabbar"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-tabbar-snapshot",
+  "repository": {
+    "type": "git",
+    "url": "github.com/marf/react-native-tabbar-snapshot.git"
+  },
+  "version": "1.0.0"
+}
