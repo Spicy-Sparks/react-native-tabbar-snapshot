@@ -7,8 +7,11 @@ RCT_EXPORT_MODULE();
 
 - (void)makeSnapshot:(void(^)(NSString *data)) completion  {
     dispatch_async(dispatch_get_main_queue(), ^{
-      UITabBarController *tabController = (UITabBarController *) UIApplication.sharedApplication.windows[0].rootViewController;
-      
+        
+      UIViewController *viewController = [[[UIApplication sharedApplication] delegate] window].rootViewController;
+        
+      UITabBarController *tabController = [viewController isKindOfClass:[UITabBarController class]] ? (UITabBarController *)viewController : [viewController tabBarController];
+
       UIView *tabBarView = [tabController tabBar];
       
       UIGraphicsBeginImageContextWithOptions([tabBarView bounds].size, true, 0.0);
@@ -30,8 +33,5 @@ RCT_EXPORT_METHOD(makeTabBarSnapshot:(RCTPromiseResolveBlock)resolve
         resolve(encodedString);
     }];
 }
-
-
-
 
 @end
