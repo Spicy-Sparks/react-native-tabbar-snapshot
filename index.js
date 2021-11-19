@@ -1,3 +1,3 @@
 import { NativeModules } from 'react-native';
 
-export const makeTabBarSnapshot = () => NativeModules.RNTabBarSnapshot.makeTabBarSnapshot();
+export const makeTabBarSnapshot = (backgroundColor) => NativeModules.RNTabBarSnapshot.makeTabBarSnapshot(backgroundColor);
