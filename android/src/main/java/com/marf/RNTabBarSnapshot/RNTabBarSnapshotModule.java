@@ -38,7 +38,7 @@ public class RNTabBarSnapshotModule extends ReactContextBaseJavaModule {
     return "RNTabBarSnapshot";
   }
 
-  private String makeSnapShot() {
+  private String makeSnapShot(String backgroundColor) {
 
     View iv = (View) getReactApplicationContext().getCurrentActivity().getWindow().findViewById(bottomTabsId);
     Bitmap bitmap = Bitmap.createBitmap(
@@ -59,9 +59,9 @@ public class RNTabBarSnapshotModule extends ReactContextBaseJavaModule {
 
 
   @ReactMethod
-  public void makeTabBarSnapshot(Promise promise) {
+  public void makeTabBarSnapshot(String backgroundColor, Promise promise) {
     try {
-      promise.resolve(this.makeSnapShot());
+      promise.resolve(this.makeSnapShot(backgroundColor));
     } catch (Exception e) {
       promise.reject(e);
     }
